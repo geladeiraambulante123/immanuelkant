@@ -1,0 +1,188 @@
+/* Variaveis*/
+
+@keyframes animação{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+:root{
+  --background-color: rgb(125, 158, 158);
+  --cab-height: 900px;
+  --texto-img-height: 450px;
+}
+
+/* Comandos globais */
+
+html {
+  scroll-behavior: smooth;
+}
+  
+body {
+  background-image: url(kant_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul{
+  list-style-type: none;
+  justify-content: center;
+  display: flex;
+}
+
+/* Cabeçalho */
+
+.cabeçalho{
+  background-image: url(https://filosofiaempreendedora.com/wp-content/uploads/2023/03/immanuel-kant-1-1024x639.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: var(--cab-height);
+  align-items: center;
+}
+
+.cabeçalho h1{
+  text-align: center;
+  font-size: 150px;
+  font-family: "Tangerine", cursive;
+  font-weight: bold;
+  font-style: normal;
+  color: white;
+  padding-top: calc(var(--cab-height)*0.35);
+  margin-bottom: 30px;
+}
+
+.cabeçalho h2{
+  font-family: "Lugrasimo", cursive;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Links ou cards para redirecionar a outros sites*/
+
+.links{
+  animation: animação 1s ease-in-out;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.links div{
+  padding: 40px;
+}
+.links div:hover{
+  scale: 1.1;
+  transition: 0.5s;
+}
+.links img{
+  border-radius: 20px;
+  height: 300px;
+}
+
+/* Menu ou aquele treco que rediceciona para o próprio site*/
+
+.menu{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: right;
+  padding: 0;
+  z-index: 10;
+  transition: 1s;
+}
+
+.menu ul{
+  gap: 10px;
+}
+
+.menu li{
+  font-family: "PT Serif", serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 30px;
+  transition-duration: 0.5s;
+}
+
+.menu li:hover{
+  border-radius: 5px;
+  background-color: rgba(51, 51, 51, 0.7);
+}
+
+
+/* Textos ou informações basicas do site*/
+
+.texto{
+  animation: animação 1s ease-in-out;
+  gap: 20px;
+  place-items: center;
+}
+.texto div {
+  background-color: rgba(43, 43, 43, 0.6);
+  max-width: calc(var(--texto-img-height) + 400px);
+  display: flex;
+  padding: 20px;
+  margin: 20px;
+  margin-top: 40px;
+  border-radius: 5px;
+  flex: 1;
+  box-shadow: 20px 20px 20px rgb(65, 45, 45, 0.5);
+}
+.texto div img {
+  height: var(--texto-img-height);
+}
+.texto div div{
+  background-color: transparent;
+  display: block;
+  justify-content: center;
+  box-shadow: none;
+}
+.texto_txt h1{
+  margin-bottom: 20px;
+  color: bisque;
+}
+.texto_txt p{
+  font-size: 23px;
+}
+.texto div hr {
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0 20px;
+  height: auto;
+}
+
+/* Não sei o que comentar*/
+
+footer{
+  background-color: rgb(16, 85, 97);
+  display: flex;
+  font-size: larger;
+  padding: 10px;
+  justify-content: center;
+}  
+
+footer p{
+  margin-left: 20px;
+}
+
+footer img:hover{
+  scale: 1.1;
+  transition: 0.5s;
+}
