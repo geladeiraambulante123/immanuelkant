@@ -160,6 +160,7 @@ ul{
 }
 .texto_txt p{
   font-size: 23px;
+  color: bisque;
 }
 .texto div hr {
   border: none;
@@ -185,4 +186,5 @@ footer p{
 footer img:hover{
   scale: 1.1;
   transition: 0.5s;
+
 }
