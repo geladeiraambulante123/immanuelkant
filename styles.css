@@ -134,6 +134,9 @@ ul{
   gap: 20px;
   place-items: center;
 }
+.texto p{
+  color: bisque;
+}
 .texto div {
   background-color: rgba(43, 43, 43, 0.6);
   max-width: calc(var(--texto-img-height) + 400px);
@@ -160,7 +163,6 @@ ul{
 }
 .texto_txt p{
   font-size: 23px;
-  color: bisque;
 }
 .texto div hr {
   border: none;
@@ -188,3 +190,4 @@ footer img:hover{
   transition: 0.5s;
 
 }
+
